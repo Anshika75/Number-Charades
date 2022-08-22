@@ -1,13 +1,8 @@
-import random 
-level = 1
-attempt = 0
+import random
+attempt = 5
 choice = 1
-chances = 10
-
-
 
 while choice == 1:
-    
     level = int(input("""Choose the level of difficulty: 
 1 - Easy
 2 - Intermediate
@@ -24,8 +19,6 @@ while choice == 1:
         print("Please enter correct level")
         exit()
     print("You have {} chances to guess the number in the range [1, {}]".format(chances,limit))
-    print(choice)
-    print(limit)
     number = random.randint(1, limit)
     print(number)
     choice = int(input("""Enter 0 to exit
