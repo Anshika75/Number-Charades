@@ -23,7 +23,7 @@ while choice == 1:
     else:
         print("Please enter correct level")
         exit()
-    print("You have {} chances to guess the number in the range [1, {}]".format(chances).format(limit))
+    print("You have {} chances to guess the number in the range [1, {}]".format(chances,limit))
     print(choice)
     print(limit)
     number = random.randint(1, limit)
